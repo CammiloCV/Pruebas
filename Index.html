@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form onsubmit="myFunction(); return false;" required>
+        <input type="text" id= "pID" placeholder="Ingrese el ID" required/><br/>
+        <input type="text" id= "pNombre" placeholder="Ingrese el Nombre" required/><br/>
+        <input type="text" id= "pDes" placeholder="Ingrese La Descripción" required/><br/>
+        <input type="number" id= "pValor" placeholder="Ingrese el Valor Unitario" required/><br/>
+        <select id="pEstado" >
+            
+            <option value="Seleccione">Seleccione</option>
+            <option value="En proceso">En proceso</option>
+            <option value="Entregado">Entregado</option>
+            <option value="Cancelado">Cancelado</option>
+    
+        </select>
+    
+        <br>
+        <br>
+    
+        
+        <input type="submit" value="Registrar" action="tabla1.html">
+        <input type="reset" value="Limpiar">
+        <button onclick="window.location.href='tabla1.html'">Ventas</button>
+        </form>
+        <script src="js/java.js"></script>
+</body>
+</html>
